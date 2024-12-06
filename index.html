@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Power BI Dashboard</title>
+    <script>
+        // Password protection
+        const password = "Vindico"; // Set your password here
+        const userPassword = prompt("Enter the password to access this dashboard:");
+        if (userPassword !== password) {
+            alert("Incorrect password. Access denied.");
+            document.body.innerHTML = "<h3>Access Denied</h3>";
+        }
+    </script>
+</head>
+<body>
+    <h2>Power BI Dashboard</h2>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDJmNWU4NDUtNGVhZS00OWFkLTk2NjItNzViZDRjZTM2M2Y0IiwidCI6IjJkZWY4MGQ4LTYyYzUtNDNlZS1hY2U5LWIwMGViMzkwMTc4ZSJ9" width="100%" height="800" frameborder="0"></iframe>
+</body>
+</html>
